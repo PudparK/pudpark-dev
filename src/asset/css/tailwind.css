@@ -3,3 +3,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@variants hover {
+  .bg-red {
+    background-color: var(--primary-red);
+  }
+}

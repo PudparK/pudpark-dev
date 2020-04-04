@@ -49,7 +49,7 @@ export default class Header extends React.Component {
             </button>
           </div>
           <div className={"w-full block lg:w-auto" + mobileClose}>
-            <div className="text-md">
+            <div className="text-xl">
               <Link
                 className="block mt-4 lg:inline-block lg:mt-0 mr-4"
                 to="/project"
@@ -65,7 +65,7 @@ export default class Header extends React.Component {
                 Blog
               </Link>
               <Link
-                className="inline-block text-md px-4 py-2 leading-none border rounded text-red border-red hover:border-transparent hover:bg-white mt-4 lg:mt-0"
+                className="inline-block text-xl px-4 py-2 leading-none border rounded border-red hover:border-transparent hover:bg-red hover:text-black mt-4 lg:mt-0"
                 to="/resume"
                 onClick={this.toggleClose}
               >
