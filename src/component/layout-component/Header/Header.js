@@ -30,7 +30,7 @@ export default class Header extends React.Component {
 
     return (
       <nav className="py-3">
-        <div className="items-center justify-between flex-wrap flex container mx-auto">
+        <div className="items-center justify-between flex-wrap flex container mx-auto px-3">
           <div className="flex items-center flex-shrink-0 mr-6">
             <Link to="/" onClick={this.toggleClose}>
               <img src={logo} alt="PudparK Developer" />

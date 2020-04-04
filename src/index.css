@@ -25,5 +25,13 @@ code {
 }
 
 .text-red {
-  color: var(#C8202F);
+  color: var(--primary-red);
+}
+
+.h-screen {
+  height: calc(100vh - 91px);
+}
+
+.header-text {
+  font-size: calc(28px + 0.5vh + 1.5vw);
 }
