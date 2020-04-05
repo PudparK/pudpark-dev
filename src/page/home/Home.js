@@ -26,16 +26,24 @@ export default class Home extends React.Component {
           </p>
           <ul className="flex justify-around text-red py-6">
             <li>
-              <FontAwesomeIcon icon={faTwitter} size="2x" />
+              <a href="https://twitter.com/Paul__132">
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              <a href="www.linkedin.com/in/paul-barron">
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon icon={faTwitch} size="2x" />
+              <a href="https://www.twitch.tv/pudpark36">
+                <FontAwesomeIcon icon={faTwitch} size="2x" />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon icon={faYoutube} size="2x" />
+              <a href="https://www.youtube.com/channel/UCYZ0t_lWDlbdLVonbqpOg4g">
+                <FontAwesomeIcon icon={faYoutube} size="2x" />
+              </a>
             </li>
           </ul>
         </div>
