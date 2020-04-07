@@ -5,6 +5,7 @@
   -webkit-animation: blink 1s infinite;
   width: 7px;
   height: 1rem;
+  top: 3px;
 }
 
 @keyframes blink {

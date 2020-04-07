@@ -14,8 +14,8 @@ export default class Home extends React.Component {
     return (
       <>
         <div className="h-screen flex flex-col justify-center text-gray-100">
-          <h3 className="text-base font-bold">
-            HELLO WORLD<span className="cursor"></span>
+          <h3 className="text-base font-bold relative">
+            HELLO WORLD<span className="cursor absolute"></span>
           </h3>
           <h1 className="header-text text-red font-semibold">Paul Barrón</h1>
           <p className="text-xl">

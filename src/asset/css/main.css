@@ -10920,10 +10920,6 @@ video {
   background-color: var(--primary-red);
 }
 
-.h-screen {
-  height: calc(100vh - 91px);
-}
-
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
