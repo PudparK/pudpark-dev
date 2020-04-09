@@ -5,19 +5,46 @@
   -webkit-animation: blink 1s infinite;
   width: 7px;
   height: 1rem;
-  top: 3px;
+  top: 2px;
 }
 
 @keyframes blink {
   0% {
-    background: #222
+    background: #222;
   }
 
   50% {
-    background: #ffffff
+    background: #ffffff;
   }
 
   100% {
-    background: #222
+    background: #222;
   }
 }
+
+.jordan-triangle {
+  background: url("./bw-paul-barron-600.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  min-height: 60vh;
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+  padding-right: 45%;
+  padding-left: 15px;
+}
+
+/* .jordan-triangle:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: var(--primary-red);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transform: skewY(-4deg);
+  z-index: -1;
+} */

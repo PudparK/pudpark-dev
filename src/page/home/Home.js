@@ -9,11 +9,14 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { faQuoteLeft, faAsterisk } from '@fortawesome/free-solid-svg-icons';
+
+
 export default class Home extends React.Component {
   render() {
     return (
       <>
-        <div className="h-screen flex flex-col justify-center text-gray-100">
+        <div className="conatiner mx-3 h-screen flex flex-col justify-center text-gray-100">
           <h3 className="text-base font-bold relative">
             HELLO WORLD<span className="cursor absolute"></span>
           </h3>
@@ -46,6 +49,12 @@ export default class Home extends React.Component {
               </a>
             </li>
           </ul>
+        </div>
+        <div className="jordan-triangle">
+          <FontAwesomeIcon icon={faQuoteLeft} size="2x" className="text-red" /> 
+          <blockquote className="text-bold text-5xl leading-none">
+            I like to build cool <br />sh<span className="text-4xl inline-block"><FontAwesomeIcon icon={faAsterisk} size="xs" className="text-red flex" /></span>t.
+          </blockquote>
         </div>
       </>
     );

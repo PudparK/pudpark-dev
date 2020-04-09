@@ -11,9 +11,7 @@ function App() {
     <Router>
       <div>
         <Header />
-        <div className="container mx-auto px-3">
-          <Routes />
-        </div>
+        <Routes />
       </div>
     </Router>
   );
