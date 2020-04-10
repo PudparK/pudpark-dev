@@ -9,8 +9,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faQuoteLeft, faAsterisk } from '@fortawesome/free-solid-svg-icons';
-
+import { faQuoteLeft, faAsterisk } from "@fortawesome/free-solid-svg-icons";
 
 export default class Home extends React.Component {
   render() {
@@ -50,10 +49,19 @@ export default class Home extends React.Component {
             </li>
           </ul>
         </div>
-        <div className="jordan-triangle pl-3 pr-40 xs:pr-48 pt-10">
-          <FontAwesomeIcon icon={faQuoteLeft} size="2x" className="text-red" /> 
+        <div className="jordan-triangle pl-3 pr-40 sm:pr-56 xs:pr-48 pt-10">
+          <FontAwesomeIcon icon={faQuoteLeft} size="2x" className="text-red" />
           <blockquote className="text-bold text-5xl leading-none">
-            I like to build cool <br />sh<span className="text-4xl inline-block"><FontAwesomeIcon icon={faAsterisk} size="xs" className="text-red flex" /></span>t.
+            I like to build cool <br />
+            sh
+            <span className="text-4xl inline-block">
+              <FontAwesomeIcon
+                icon={faAsterisk}
+                size="xs"
+                className="text-red flex"
+              />
+            </span>
+            t.
           </blockquote>
         </div>
       </>
