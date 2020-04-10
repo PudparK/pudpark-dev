@@ -49,7 +49,7 @@ export default class Home extends React.Component {
             </li>
           </ul>
         </div>
-        <div className="jordan-triangle pl-3 pr-40 sm:pr-56 xs:pr-48 pt-10">
+        <div className="jordan-triangle pl-3 pt-10">
           <FontAwesomeIcon icon={faQuoteLeft} size="2x" className="text-red" />
           <blockquote className="text-bold text-5xl leading-none">
             I like to build cool <br />

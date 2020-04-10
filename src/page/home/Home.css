@@ -26,6 +26,7 @@
   background: url("./bw-paul-barron-600.png");
   background-repeat: no-repeat;
   background-position: -50px bottom;
+  padding-right: 60%;
   min-height: 60vh;
   width: 100%;
   position: relative;
@@ -33,13 +34,15 @@
 
 @media (min-width: 345px) and (max-width: 451px) {
   .jordan-triangle {
-    background-position: -40px bottom;
+    background-position: -20px bottom;
+    padding-right: 60%;
   }
 }
 
 @media (min-width: 452px) and (max-width: 580px) {
   .jordan-triangle {
-    background-position: 100px bottom;
+    background-position: 20px bottom;
+    padding-right: 60%;
   }
 }
 
