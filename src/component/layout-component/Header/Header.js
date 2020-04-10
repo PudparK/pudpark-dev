@@ -30,14 +30,14 @@ export default class Header extends React.Component {
 
     return (
       <nav className="py-3">
-        <div className="items-center justify-between flex-wrap flex container mx-auto px-3">
+        <div className="items-center justify-between flex-wrap flex px-3">
           <div className="flex items-center flex-shrink-0 mr-6">
             <Link to="/" onClick={this.toggleClose}>
               <img src={logo} alt="PudparK Developer" />
             </Link>
           </div>
           <div className="block lg:hidden" onClick={this.toggleHeader}>
-            <button className="flex items-center px-3 py-2 rounded hover:border-white">
+            <button className="flex items-center px-3 sm:px-1 py-2 rounded hover:border-white">
               <svg
                 className="fill-current h-3 w-3"
                 viewBox="0 0 20 20"
