@@ -39,14 +39,14 @@
   }
 }
 
-@media (min-width: 452px) and (max-width: 580px) {
+@media (min-width: 452px) {
   .jordan-triangle {
     background-position: 20px bottom;
     padding-right: 60%;
   }
 }
 
-@media (min-width: 580px) and (max-width: 768px) {
+@media (min-width: 580px) {
   .jordan-triangle {
     background-position: 200px bottom;
   }

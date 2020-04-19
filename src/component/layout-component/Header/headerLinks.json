@@ -1,0 +1,18 @@
+{
+  "links": [{
+      "name": "Projects",
+      "url": "/projects",
+      "type": "general"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog",
+      "type": "general"
+    },
+    {
+      "name": "Resume",
+      "url": "/resume",
+      "type": "button"
+    }
+  ]
+}

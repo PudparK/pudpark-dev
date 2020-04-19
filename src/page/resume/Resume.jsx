@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 export default class Resume extends React.Component {
   render() {
-    return 'Hello from the Resume page.';
+    return "Hello from the Resume page.";
   }
 }

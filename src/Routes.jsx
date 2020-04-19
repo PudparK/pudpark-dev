@@ -14,7 +14,7 @@ export default class Routes extends React.Component {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/project">
+        <Route exact path="/projects">
           <Project />
         </Route>
         <Route path="/blog">
