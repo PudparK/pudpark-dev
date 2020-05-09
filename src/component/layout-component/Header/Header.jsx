@@ -22,7 +22,7 @@ function Header() {
       if (link.type === "general") {
         return (
           <Link
-            className="block mt-4 lg:inline-block lg:mt-0 mr-4"
+            className="lg:text-2xl block lg:inline-block mt-4 lg:mt-0 mr-4"
             to={link.url}
             onClick={toggleClose}
           >
@@ -32,7 +32,7 @@ function Header() {
       } else {
         return (
           <Link
-            className="inline-block text-xl px-4 py-2 leading-none border rounded border-red hover:border-transparent hover:bg-red hover:text-black mt-4 lg:mt-0"
+            className="margin-button inline-block lg:text-2xl px-4 py-2 leading-none border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black mt-4 lg:mt-0"
             to={link.url}
             onClick={toggleClose}
           >
@@ -47,15 +47,19 @@ function Header() {
   let mobileClose = isOpen ? "" : " mobile-close";
 
   return (
-    <nav className="py-3">
-      <div className="items-center justify-between flex-wrap flex px-3">
-        <div className="flex items-center flex-shrink-0 mr-6">
+    <div className="header px-0">
+      <nav className="container mx-auto py-3 items-center justify-between flex-wrap flex">
+        <div className="flex items-center flex-shrink-0">
           <Link to="/" onClick={toggleClose}>
-            <img className="header-logo" src={logo} alt="PudparK Developer" />
+            <img
+              className="header-logo p"
+              src={logo}
+              alt="PudparK Developer"
+            />
           </Link>
         </div>
         <div className="block lg:hidden" onClick={toggleHeader}>
-          <button className="flex items-center px-3 sm:px-1 py-2 rounded hover:border-white">
+          <button className="flex items-center py-2 rounded hover:border-white">
             <svg
               className="fill-current h-3 w-3"
               viewBox="0 0 20 20"
@@ -69,8 +73,8 @@ function Header() {
         <div className={"w-full block lg:w-auto" + mobileClose}>
           <div className="text-xl">{getPageLinks()}</div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }
 

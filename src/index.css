@@ -1,6 +1,9 @@
 :root {
   --primary-red: #C8202F;
   --primary-dark: #131313;
+  --javascript: #E45225;
+  --css: #E6A328;
+  --html: #0A73B8;
 }
 
 body {
@@ -32,4 +35,10 @@ code {
 
 .header-text {
   font-size: calc(28px + 0.5vh + 1.5vw);
+}
+
+.html,
+.css,
+.javascript {
+  font-family: 'Noto Sans JP', sans-serif;
 }
