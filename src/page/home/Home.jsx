@@ -17,8 +17,8 @@ export default class Home extends React.Component {
     return (
       <>
         <div className="container px-0 h-screen flex flex-col justify-center mx-auto">
-          <h3 className="text-base font-bold relative lg:text-xl">
-            HELLO WORLD<span className="cursor absolute"></span>
+          <h3 className="text-base font-bold relative lg:text-xl cursor">
+            HELLO WORLD
           </h3>
           <h1 className="text-red text-5xl lg:text-6xl font-bold">Paul Barrón</h1>
           <p className="lg:w-3/4 text-3xl lg:text-5xl font-black leading-tight">I started out building <span class="html font-regular">HTML</span> moved on to <span className="css">CSS</span> and now I'm controlling the two w/ <span className="javascript">JS</span>.</p>
