@@ -16,7 +16,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <>
-        <div className="container px-0 h-screen flex flex-col justify-center mx-auto">
+        <div className="pk-container px-0 h-screen flex flex-col justify-center">
           <h3 className="text-base font-bold relative lg:text-xl cursor">
             HELLO WORLD
           </h3>
@@ -24,9 +24,11 @@ export default class Home extends React.Component {
           <p className="lg:w-3/4 text-3xl lg:text-5xl font-black leading-tight">I started out building <span class="html font-regular">HTML</span> moved on to <span className="css">CSS</span> and now I'm controlling the two w/ <span className="javascript">JS</span>.</p>
 
           <div className="home-heading flex flex-wrap text-red leading-tight mt-6">
-            <Link to="/projects" className="margin-button inline-block lg:text-2xl font-semibold px-4 py-2 leading-none border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black">Projects</Link>
 
             <ul className="flex items-center text-2xl lg:text-4xl">
+              <li>
+                <Link to="/projects" className="inline-block lg:text-2xl font-semibold px-4 py-2 leading-none border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black">Projects</Link>
+              </li>
               <li>
                 <a href="https://twitter.com/Paul__132">
                   <FontAwesomeIcon icon={faTwitter} />
@@ -51,7 +53,7 @@ export default class Home extends React.Component {
           </div>
         </div>
         <div className="bio-pic">
-          <div className="container mx-auto pl-3 pt-10">
+          <div className="container pl-3 pt-10">
             <FontAwesomeIcon
               icon={faQuoteLeft}
               size="2x"

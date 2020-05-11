@@ -196,7 +196,9 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
     },
-    container: {},
+    container: {
+      center: true
+    },
     cursor: {
       auto: 'auto',
       default: 'default',
@@ -304,7 +306,9 @@ module.exports = {
       disc: 'disc',
       decimal: 'decimal',
     },
-    margin: (theme, { negative }) => ({
+    margin: (theme, {
+      negative
+    }) => ({
       auto: 'auto',
       ...theme('spacing'),
       ...negative(theme('spacing')),
@@ -313,7 +317,9 @@ module.exports = {
       full: '100%',
       screen: '100vh',
     },
-    maxWidth: (theme, { breakpoints }) => ({
+    maxWidth: (theme, {
+      breakpoints
+    }) => ({
       none: 'none',
       xs: '20rem',
       sm: '24rem',
@@ -557,7 +563,9 @@ module.exports = {
       '90': '90deg',
       '180': '180deg',
     },
-    translate: (theme, { negative }) => ({
+    translate: (theme, {
+      negative
+    }) => ({
       ...theme('spacing'),
       ...negative(theme('spacing')),
       '-full': '-100%',

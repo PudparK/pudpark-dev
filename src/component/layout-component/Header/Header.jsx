@@ -32,7 +32,7 @@ function Header() {
       } else {
         return (
           <Link
-            className="margin-button inline-block lg:text-2xl px-4 py-2 leading-none border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black mt-4 lg:mt-0"
+            className="inline-block lg:text-2xl px-4 py-2 leading-none border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black mt-4 lg:mt-0"
             to={link.url}
             onClick={toggleClose}
           >
@@ -48,7 +48,7 @@ function Header() {
 
   return (
     <div className="header px-0">
-      <nav className="container mx-auto py-3 items-center justify-between flex-wrap flex">
+      <nav className="pk-container mx-auto py-3 items-center justify-between flex-wrap flex">
         <div className="flex items-center flex-shrink-0">
           <Link to="/" onClick={toggleClose}>
             <img

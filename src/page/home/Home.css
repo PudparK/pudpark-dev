@@ -9,14 +9,9 @@
 }
 
 .home-heading ul li {
+  line-height: 1.5rem;
   margin-right: 20px;
 }
-
-.home-heading ul li:first-child {
-  margin-left: 30px;
-}
-
-
 
 @media (min-width: 640px) {
   .bio-pic {
@@ -40,8 +35,15 @@
   -webkit-animation: blink 1s step-start infinite;
   width: 7px;
   height: 1.25rem;
-  top: 4px;
+  top: 0;
 }
+
+@media screen and (min-width: 1024px) {
+  .cursor::after {
+    top: 4px;
+  }
+}
+
 
 @keyframes blink {
   50% {

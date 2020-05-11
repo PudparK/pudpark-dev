@@ -42,3 +42,14 @@ code {
 .javascript {
   font-family: 'Noto Sans JP', sans-serif;
 }
+
+.pk-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .pk-container {
+    max-width: 1280px;
+  }
+}
