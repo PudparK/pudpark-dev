@@ -21,7 +21,7 @@ export default class Home extends React.Component {
             HELLO WORLD
           </h3>
           <h1 className="text-red text-5xl lg:text-6xl font-bold">Paul Barrón</h1>
-          <p className="lg:w-3/4 text-3xl lg:text-5xl font-black leading-tight">I started out building <span class="html font-regular">HTML</span> moved on to <span className="css">CSS</span> and now I'm controlling the two w/ <span className="javascript">JS</span>.</p>
+          <p className="lg:w-3/4 text-3xl lg:text-5xl font-black leading-tight">I started out building <span className="html font-regular">HTML</span> moved on to <span className="css">CSS</span> and now I'm controlling the two w/ <span className="javascript">JS</span>.</p>
 
           <div className="home-heading text-red leading-tight mt-6">
 
@@ -35,7 +35,7 @@ export default class Home extends React.Component {
                 </a>
               </li>
               <li>
-                <a href="www.linkedin.com/in/paul-barron">
+                <a href="https://www.linkedin.com/in/paul-barron">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
