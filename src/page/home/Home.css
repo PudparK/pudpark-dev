@@ -15,7 +15,7 @@
 .home-heading ul li:first-child {
   text-align: center;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 1.25rem;
 }
 
 .home-heading ul li a {
@@ -26,7 +26,6 @@
 .home-heading ul {
   justify-content: space-around;
 }
-
 
 @media screen and (min-width: 640px) {
   .home-heading ul li:first-child {
@@ -42,7 +41,6 @@
     margin-right: 20px;
   }
 }
-
 
 .cursor::after {
   content: "";
@@ -62,7 +60,6 @@
     top: 4px;
   }
 }
-
 
 @keyframes blink {
   50% {

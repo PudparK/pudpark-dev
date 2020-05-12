@@ -22,7 +22,7 @@ function Header() {
       if (link.type === "general") {
         return (
           <Link
-            className="lg:text-2xl block lg:inline-block mt-4 lg:mt-0 mr-4"
+            className="text-2xl font-semibold block lg:inline-block mt-4 lg:mt-0 mr-4"
             to={link.url}
             onClick={toggleClose}
             key={i}
@@ -33,7 +33,7 @@ function Header() {
       } else {
         return (
           <Link
-            className="inline-block lg:text-2xl px-4 py-2 leading-none border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black mt-4 lg:mt-0"
+            className="inline-block text-2xl font-semibold px-4 py-2 leading-none border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black mt-4 lg:mt-0"
             to={link.url}
             onClick={toggleClose}
             key={i}
