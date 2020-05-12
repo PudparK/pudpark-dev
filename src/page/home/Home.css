@@ -1,29 +1,48 @@
 .bio-pic {
   background: url("./bw-paul-barron-600.png");
   background-repeat: no-repeat;
-  background-position: 30px bottom;
+  background-origin: border-box;
+  background-position: calc(100vw - 400px) bottom;
   min-height: 60vh;
-  width: 100%;
-  position: relative;
-  right: 0;
 }
 
-.home-heading ul li {
-  line-height: 1.5rem;
-  margin-right: 20px;
-}
-
-@media (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .bio-pic {
     background-position: right bottom;
   }
 }
 
-@media (min-width: 1024px) {
-  .bio-pic {
-    background-position: 80% bottom;
+.home-heading ul li:first-child {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.home-heading ul li a {
+  display: flex;
+  justify-content: center;
+}
+
+.home-heading ul {
+  justify-content: space-around;
+}
+
+
+@media screen and (min-width: 640px) {
+  .home-heading ul li:first-child {
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  .home-heading ul {
+    justify-content: initial;
+  }
+
+  .home-heading ul li {
+    margin-right: 20px;
   }
 }
+
 
 .cursor::after {
   content: "";
