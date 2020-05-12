@@ -18,13 +18,14 @@ function Header() {
   function getPageLinks() {
     const links = headerLinks.links;
 
-    const linksMap = links.map((link) => {
+    const linksMap = links.map((link, i) => {
       if (link.type === "general") {
         return (
           <Link
             className="lg:text-2xl block lg:inline-block mt-4 lg:mt-0 mr-4"
             to={link.url}
             onClick={toggleClose}
+            key={i}
           >
             {link.name}
           </Link>
@@ -35,6 +36,7 @@ function Header() {
             className="inline-block lg:text-2xl px-4 py-2 leading-none border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black mt-4 lg:mt-0"
             to={link.url}
             onClick={toggleClose}
+            key={i}
           >
             {link.name}
           </Link>
