@@ -20,14 +20,14 @@ export default class Home extends React.Component {
           <h3 className="text-base font-bold relative lg:text-xl cursor">
             HELLO WORLD
           </h3>
-          <h1 className="text-red text-5xl lg:text-6xl font-bold">Paul Barrón</h1>
-          <p className="lg:w-3/4 text-3xl lg:text-5xl font-black leading-tight">I started out building <span className="html font-regular">HTML</span> moved on to <span className="css">CSS</span> and now I'm controlling the two w/ <span className="javascript">JS</span>.</p>
+          <h1 className="text-red text-5xl sm:text-6xl font-bold">Paul Barrón</h1>
+          <p className="lg:w-3/4 text-3xl sm:text-5xl font-black leading-tight mb-6">I started out building <span className="html font-regular">HTML</span> moved on to <span className="css">CSS</span> and now I'm controlling the two w/ <span className="javascript">JS</span>.</p>
 
-          <div className="home-heading text-red leading-tight mt-6">
+          <div className="home-heading text-red">
 
             <ul className="flex flex-wrap items-center text-3xl lg:text-4xl">
               <li className="block sm:inline-block">
-                <Link to="/projects" className="block sm:inline-block text-center sm:inline-block lg:text-2xl font-semibold px-4 py-2 border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black">Projects</Link>
+                <Link to="/projects" className="block sm:inline-block text-center sm:inline-block text-2xl font-semibold px-4 py-0 border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black">Projects</Link>
               </li>
               <li>
                 <a href="https://twitter.com/Paul__132">
