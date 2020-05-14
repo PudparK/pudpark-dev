@@ -1,18 +1,19 @@
 .HamburgerButton {
 	cursor: pointer;
 	height: 24px;
-	width: 24px;
 	position: relative;
+	user-select: none;
+	width: 24px;
 	z-index: 101;
 }
 
 .HamburgerButton span {
-	display: block;
-	width: 24px;
-	height: 3px;
 	background-color: var(--primary-red);
+	display: block;
+	height: 3px;
 	left: 0;
 	position: absolute;
+	width: 24px;
 }
 
 .isToggled {
