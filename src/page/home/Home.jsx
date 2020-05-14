@@ -24,28 +24,31 @@ const Home = () => {
 						<li className="block sm:inline-block">
 							<Link
 								to="/projects"
-								className="block sm:inline-block text-center sm:inline-block text-2xl font-semibold px-4 py-0 border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black"
+								className="noSelect block sm:inline-block text-center sm:inline-block text-2xl font-semibold px-4 py-0 border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black"
 							>
 								Projects
 							</Link>
 						</li>
 						<li>
-							<a href="https://twitter.com/Paul__132">
+							<a className="noSelect-icon" href="https://twitter.com/Paul__132">
 								<FontAwesomeIcon icon={faTwitter} />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.linkedin.com/in/paul-barron">
+							<a className="noSelect-icon" href="https://www.linkedin.com/in/paul-barron">
 								<FontAwesomeIcon icon={faLinkedin} />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.twitch.tv/pudpark36">
+							<a className="noSelect-icon" href="https://www.twitch.tv/pudpark36">
 								<FontAwesomeIcon icon={faTwitch} />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.youtube.com/channel/UCYZ0t_lWDlbdLVonbqpOg4g">
+							<a
+								className="noSelect-icon"
+								href="https://www.youtube.com/channel/UCYZ0t_lWDlbdLVonbqpOg4g"
+							>
 								<FontAwesomeIcon icon={faYoutube} />
 							</a>
 						</li>

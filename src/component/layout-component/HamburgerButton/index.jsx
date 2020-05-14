@@ -13,7 +13,13 @@ const HamburgerButton = ({ onClick, isOpen }) => {
 
 	return (
 		<div
-			className={'block lg:hidden ' + styles.HamburgerButton + ' ' + (isOpen ? styles.isToggled : isNotToggled)}
+			className={
+				'block lg:hidden ' +
+				styles.HamburgerButton +
+				' ' +
+				(isOpen ? styles.isToggled : isNotToggled) +
+				' noSelect'
+			}
 			onClick={_onClick}
 		>
 			<span />
