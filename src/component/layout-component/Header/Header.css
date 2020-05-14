@@ -2,24 +2,31 @@
   width: 50px;
 }
 
+.mobile-menu {
+  max-height: 233px;
+  overflow: hidden;
+  transition: ease-in-out 400ms;
+}
+
 .mobile-close {
-  display: none;
+  max-height: 0;
 }
 
 .header {
   background-color: var(--primary-dark);
-  color: var(--primary-red);
   box-shadow: 0 0 6px rgba(0, 0, 0, 1);
+  color: var(--primary-red);
   z-index: 1;
 }
 
 .nav-drop-shadow {
-  margin: 10px;
   border-radius: 4px;
+  margin: 10px;
 }
 
 @media (min-width: 1024px) {
   .mobile-close {
     display: flex;
+    max-height: inherit;
   }
 }
