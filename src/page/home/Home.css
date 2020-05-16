@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-origin: border-box;
   background-position: calc(100vw - 400px) bottom;
-  min-height: 60vh;
+  min-height: 457px;
 }
 
 @media screen and (min-width: 768px) {

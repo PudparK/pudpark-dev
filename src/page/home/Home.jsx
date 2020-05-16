@@ -14,7 +14,7 @@ const Home = () => {
 				<h3 className="text-base font-bold relative lg:text-xl cursor">HELLO WORLD</h3>
 				<h1 className="text-red text-5xl sm:text-6xl font-bold">Paul Barrón</h1>
 				<p className="lg:w-3/4 text-3xl sm:text-5xl font-black leading-tight mb-6">
-					I started out building <span className="html font-regular">HTML</span> moved on to
+					I started out building <span className="html font-regular">HTML</span> moved on to{' '}
 					<span className="css">CSS</span> and now I'm controlling the two w/
 					<span className="javascript">JS</span>.
 				</p>
