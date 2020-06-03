@@ -36,7 +36,7 @@ function Header() {
         return (
           <NavLink
             activeClassName="active-button"
-            className="noSelect inline-block text-2xl font-semibold px-4 py-2 leading-none border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black mt-4 lg:mt-0"
+            className="inline-block text-2xl font-semibold px-4 py-2 leading-none border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black mt-4 lg:mt-0"
             to={link.url}
             onClick={toggleClose}
             key={i}
