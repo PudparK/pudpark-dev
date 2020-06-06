@@ -1,7 +1,9 @@
-import React from 'react';
+import React from "react";
 
-export default class Blog extends React.Component {
-  render() {
-    return 'Hello from the Blog page.';
-  }
+import ContentBody from "component/layout-component/ContentBody/ContentBody";
+
+function Blog() {
+  return <ContentBody>'Hello from the Blog page.'</ContentBody>;
 }
+
+export default Blog;
