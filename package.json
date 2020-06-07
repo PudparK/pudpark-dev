@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
+    "nodemon": "^2.0.4",
     "postcss-cli": "^7.1.0"
   }
 }
