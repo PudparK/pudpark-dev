@@ -1,5 +1,11 @@
 {
-  "links": [{
+  "links": [
+    {
+      "name": "Home",
+      "url": "/",
+      "type": "general"
+    },
+    {
       "name": "Projects",
       "url": "/projects",
       "type": "general"

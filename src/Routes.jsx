@@ -1,8 +1,8 @@
 import React from "react";
 
-import Home from "./page/home/Home";
-import Project from "./page/project/Project";
-import Blog from "./page/blog/Blog";
+import Home from "./page/home";
+import Project from "./page/project";
+import Blog from "./page/blog";
 import Resume from "./page/resume/Resume";
 
 import { Switch, Route } from "react-router-dom";

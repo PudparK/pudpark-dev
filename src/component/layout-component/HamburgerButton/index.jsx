@@ -14,7 +14,7 @@ const HamburgerButton = ({ onClick, isOpen }) => {
   return (
     <div
       className={
-        "block lg:hidden " +
+        "block lg:hidden noSelect " +
         styles.HamburgerButton +
         " " +
         (isOpen ? styles.isToggled : isNotToggled)
