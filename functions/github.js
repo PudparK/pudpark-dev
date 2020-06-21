@@ -1,11 +1,3 @@
-const express = require("express");
-const app = express();
-const serverless = require("serverless-http");
-
-const fetch = require("node-fetch");
-
-require("dotenv").config();
-
 const query = `
 {
   user (login: "PudparK") {
@@ -25,6 +17,7 @@ const query = `
     }
   }
 }`;
+
 const url = "https://api.github.com/graphql";
 const opts = {
   method: "POST",
@@ -35,18 +28,7 @@ const opts = {
   body: JSON.stringify({ query }),
 };
 
-const router = express.Router();
-
-router.get("/", (req, res) => res.send("Hello"));
-
-router.get("/repos", (req, res) => {
-  fetch(url, opts)
-    .then((res) => res.json())
-    .then((data) => res.send(data))
-    .catch(console.error);
-});
-
-app.use("/.netlify/functions/github", router); // path must route to lambda
-
-module.exports = app;
-module.exports.handler = serverless(app);
+module.exports = {
+  url,
+  opts,
+};
