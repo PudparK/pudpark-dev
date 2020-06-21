@@ -13,11 +13,19 @@ require("dotenv").config();
 
 // API Calls
 const github = require("./github");
+const devTo = require("./devto");
 
 const router = express.Router();
 
 router.get("/repos", (req, res) => {
   fetch(github.url, github.opts)
+    .then((res) => res.json())
+    .then((data) => res.send(data))
+    .catch(console.error);
+});
+
+router.get("/devto", (req, res) => {
+  fetch(devTo.url, devTo.opts)
     .then((res) => res.json())
     .then((data) => res.send(data))
     .catch(console.error);
