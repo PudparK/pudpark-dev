@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import HamburgerButton from "component/layout-component/HamburgerButton/index";
 import headerLinks from "./headerLinks.json";
-import "./Header.css";
+import styles from "./styles.module.scss";
 import logo from "./pk-development-large-bg-white.png";
 
 function Header() {
@@ -24,8 +24,8 @@ function Header() {
         return (
           <NavLink
             exact
-            activeClassName="active"
-            className="text-2xl font-semibold block lg:inline-block mt-4 lg:mt-0 mr-4"
+            activeClassName={styles.active}
+            className="noSelect text-2xl font-semibold block lg:inline-block mt-4 lg:mt-0 mr-4"
             to={link.url}
             onClick={toggleClose}
             key={i}
@@ -37,8 +37,8 @@ function Header() {
         return (
           <NavLink
             exact
-            activeClassName="active-button"
-            className="inline-block text-2xl font-semibold px-4 py-2 leading-none border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black mt-4 lg:mt-0"
+            activeClassName={styles.activeButton}
+            className="noSelect inline-block text-2xl font-semibold px-4 py-2 leading-none border-2 rounded border-red hover:border-transparent hover:bg-red hover:text-black mt-4 lg:mt-0"
             to={link.url}
             onClick={toggleClose}
             key={i}
@@ -51,23 +51,27 @@ function Header() {
     return linksMap;
   }
 
-  let mobileClose = isOpen ? "" : " mobile-close";
+  let mobileClose = isOpen ? "" : " " + styles.mobileClose;
 
   return (
-    <div className="header px-0">
+    <div className={styles.header + " px-0 text-red"}>
       <div className="pk-container">
         <nav className="sub-container mx-auto py-3 items-center justify-between flex-wrap flex">
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="noSelect" onClick={toggleClose}>
               <img
-                className="header-logo p"
+                className={styles.headerLogo}
                 src={logo}
                 alt="PudparK Developer"
               />
             </Link>
           </div>
           <HamburgerButton onClick={toggleHeader} isOpen={isOpen} />
-          <div className={"mobile-menu w-full block lg:w-auto" + mobileClose}>
+          <div
+            className={
+              styles.mobileMenu + " w-full block lg:w-auto" + mobileClose
+            }
+          >
             <div className="text-xl">{getPageLinks()}</div>
           </div>
         </nav>

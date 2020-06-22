@@ -15,15 +15,16 @@ const post = {
   slug: "hello-dev-to-1ghh",
   path: "/pudpark/hello-dev-to-1ghh",
   url: "https://dev.to/pudpark/hello-dev-to-1ghh",
-  comments_count: 4,
-  public_reactions_count: 9,
-  page_views_count: 56,
+  comments_count: 13,
+  public_reactions_count: 37,
+  page_views_count: 343,
   published_timestamp: "2020-06-20T23:15:17Z",
   body_markdown:
     "This is my first post. I plan to use the DEV API to extract this data and put it on my personal site. Here goes nothing!!!\n#🤞",
-  positive_reactions_count: 9,
-  cover_image: null,
-  tag_list: ["react", "javascript", "css", "node"],
+  positive_reactions_count: 37,
+  cover_image:
+    "https://res.cloudinary.com/practicaldev/image/fetch/s--9CZQeSKU--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--SAkOX55K--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/jz1sr57svwcj3mxki6jt.jpg",
+  tag_list: ["react", "javascript", "css", "node", "default"],
   canonical_url: "https://dev.to/pudpark/hello-dev-to-1ghh",
   user: {
     name: "Paul Barron",
@@ -41,10 +42,16 @@ const post = {
 function Blog() {
   return (
     <div className={styles.gridContainer + " sub-container"}>
-      <aside className={styles.sidebar}></aside>
+      <sidebar className={styles.sidebar}></sidebar>
       <article className={styles.postContainer}>
         <Post data={post} />
+        <Post data={post} />
+        <Post data={post} />
+        <Post data={post} />
+        <Post data={post} />
+        <Post data={post} />
       </article>
+      <aside></aside>
     </div>
   );
 }
