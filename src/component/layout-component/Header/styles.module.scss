@@ -10,7 +10,7 @@
   position: absolute;
   animation: activeAnimation 0.4s forwards;
 }
-.active-button {
+.activeButton {
   background-color: var(--primary-red);
   color: #000000;
 }
@@ -31,17 +31,17 @@
     width: 16px;
   }
 }
-.header-logo {
+.headerLogo {
   width: 50px;
 }
 
-.mobile-menu {
+.mobileMenu {
   max-height: 233px;
   overflow: hidden;
   transition: ease-in-out 0.7s;
 }
 
-.mobile-close {
+.mobileClose {
   max-height: 0;
 }
 
@@ -52,13 +52,8 @@
   z-index: 1;
 }
 
-.nav-drop-shadow {
-  border-radius: 4px;
-  margin: 10px;
-}
-
 @media (min-width: 1024px) {
-  .mobile-close {
+  .mobileClose {
     display: flex;
     max-height: inherit;
   }

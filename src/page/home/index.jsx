@@ -21,10 +21,10 @@ const Home = () => {
         </h3>
         <h1 className="text-red text-5xl sm:text-6xl font-bold">Paul Barrón</h1>
         <p className="lg:w-3/4 text-3xl sm:text-5xl font-black leading-tight mb-6">
-          I started out building <span className="html font-regular">HTML</span>{" "}
-          moved on to <span className="css">CSS</span> and now I'm controlling
-          the two w/
-          <span className="javascript">JS</span>.
+          I started out building <span className="hCallout">HTML</span> moved on
+          to <span className="hCallout">CSS</span> and now I'm controlling the
+          two w/
+          <span className="hCallout"> JS</span>.
         </p>
 
         <div className="home-heading text-red">
@@ -32,29 +32,38 @@ const Home = () => {
             <li className="block sm:inline-block">
               <Link
                 to="/projects"
-                className="b<div></div>lock sm:inline-block text-center sm:inline-block text-2xl font-semibold px-4 py-0 border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black noSelect"
+                className="block sm:inline-block text-center sm:inline-block text-2xl font-semibold px-4 py-0 border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black noSelect"
               >
                 Projects
               </Link>
             </li>
             <li>
-              <a className="icon" href="https://twitter.com/Paul__132">
-                <FontAwesomeIcon className="noSelect-icon" icon={faTwitter} />
+              <a className="noSelect-icon" href="https://twitter.com/Paul__132">
+                <FontAwesomeIcon icon={faTwitter} />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/paul-barron">
-                <FontAwesomeIcon className="noSelect-icon" icon={faLinkedin} />
+              <a
+                className="noSelect-icon"
+                href="https://www.linkedin.com/in/paul-barron"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
             <li>
-              <a href="https://www.twitch.tv/pudpark36">
-                <FontAwesomeIcon className="noSelect-icon" icon={faTwitch} />
+              <a
+                className="noSelect-icon"
+                href="https://www.twitch.tv/pudpark36"
+              >
+                <FontAwesomeIcon icon={faTwitch} />
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/channel/UCYZ0t_lWDlbdLVonbqpOg4g">
-                <FontAwesomeIcon className="noSelect-icon" icon={faYoutube} />
+              <a
+                className="noSelect-icon"
+                href="https://www.youtube.com/channel/UCYZ0t_lWDlbdLVonbqpOg4g"
+              >
+                <FontAwesomeIcon icon={faYoutube} />
               </a>
             </li>
           </ul>

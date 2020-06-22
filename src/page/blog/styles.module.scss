@@ -5,6 +5,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: auto;
+  padding: 0 5%;
   .sidebar {
     min-height: 220px;
   }
@@ -15,7 +16,6 @@
 
 @include min-width(900px) {
   .gridContainer {
-    grid-template-columns: 220px auto;
-    grid-column-gap: 30px;
+    grid-template-columns: 300px 830px auto;
   }
 }
