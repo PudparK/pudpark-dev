@@ -71,11 +71,14 @@
 }
 
 @include min-width(900px) {
-  .postContent {
-    max-width: 800px;
-    margin: 20px auto;
-    .articleHeader {
-      margin-bottom: 20px;
+  .post {
+    margin-bottom: 40px;
+    .postContent {
+      max-width: 800px;
+      margin: 20px auto;
+      .articleHeader {
+        margin-bottom: 20px;
+      }
     }
   }
 }

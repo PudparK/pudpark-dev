@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { ReactComponent as Cover } from "./SVG/mono-blog-cover.svg";
 
 // Components
 import Post from "component/layout-component/Post";
@@ -44,7 +43,7 @@ function Blog() {
   return (
     <div className={styles.gridContainer + " sub-container"}>
       <div className={styles.blogCover}>
-        <h1>Blog</h1>
+        <h1 className="leading-none">Blog</h1>
       </div>
       <sidebar className={styles.sidebar}></sidebar>
       <article className={styles.postContainer}>

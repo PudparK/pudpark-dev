@@ -10,12 +10,14 @@
     "cover cover cover"
     "sidebar article aside";
   .blogCover {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-area: cover;
+    height: 140px;
     margin: 40px auto;
-    min-height: 120px;
+    vertical-align: middle;
     h1 {
-      position: relative;
       font-size: 4.5rem;
       font-weight: bold;
     }
