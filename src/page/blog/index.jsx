@@ -44,7 +44,7 @@ function Blog() {
   return (
     <div className={styles.gridContainer + " sub-container"}>
       <div className={styles.blogCover}>
-        <Cover />
+        <h1>Blog</h1>
       </div>
       <sidebar className={styles.sidebar}></sidebar>
       <article className={styles.postContainer}>

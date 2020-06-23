@@ -5,15 +5,20 @@
   height: 100%;
   display: grid;
   grid-template-columns: auto;
+  padding: 0 2.5%;
   grid-template-areas:
     "cover cover cover"
     "sidebar article aside";
-  padding: 0 5%;
   .blogCover {
+    display: grid;
     grid-area: cover;
     margin: 40px auto;
-    max-height: 400px;
-    width: 280px;
+    min-height: 120px;
+    h1 {
+      position: relative;
+      font-size: 4.5rem;
+      font-weight: bold;
+    }
   }
   .sidebar {
     min-height: 220px;
@@ -31,9 +36,12 @@
 @include min-width(900px) {
   .gridContainer {
     grid-template-rows: auto;
-    grid-template-columns: 300px 830px auto;
+    grid-template-columns: auto 840px auto;
     grid-template-areas:
       "cover cover cover"
       "sidebar article aside";
+    .blogCover {
+      min-height: 300px;
+    }
   }
 }
