@@ -42,6 +42,9 @@ const post = {
 function Blog() {
   return (
     <div className={styles.gridContainer + " sub-container"}>
+      <div className={styles.blogCover}>
+        <h1 className="leading-none">Blog</h1>
+      </div>
       <sidebar className={styles.sidebar}></sidebar>
       <article className={styles.postContainer}>
         <Post data={post} />
@@ -51,7 +54,7 @@ function Blog() {
         <Post data={post} />
         <Post data={post} />
       </article>
-      <aside></aside>
+      <aside className={styles.socialStack}></aside>
     </div>
   );
 }

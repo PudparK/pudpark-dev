@@ -1,10 +1,13 @@
 // @import "../../asset/scss/main.scss";
+@import "../../../asset/scss/main.scss";
+
 .post {
-  box-shadow: 4px 4px var(--primary-red);
-  // box-shadw: 1px 4px 0px 6px var(--primary-red)
+  border-right: 4px solid var(--primary-red);
+  border-bottom: 4px solid var(--primary-red);
+  box-sizing: content-box;
   border-radius: 25px;
   /* Top Left | Top Right | Bottom Right | Bottom Left */
-  margin-top: 20px;
+  margin-bottom: 20px;
   min-height: 300px;
   display: flex;
   flex-direction: column;
@@ -30,7 +33,7 @@
     min-height: 100px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     h2 {
       color: #ffffff;
       display: inline-block;
@@ -64,5 +67,18 @@
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.2rem;
+  }
+}
+
+@include min-width(900px) {
+  .post {
+    margin-bottom: 40px;
+    .postContent {
+      max-width: 800px;
+      margin: 20px auto;
+      .articleHeader {
+        margin-bottom: 20px;
+      }
+    }
   }
 }

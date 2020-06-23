@@ -5,17 +5,45 @@
   height: 100%;
   display: grid;
   grid-template-columns: auto;
-  padding: 0 5%;
+  padding: 0 2.5%;
+  grid-template-areas:
+    "cover cover cover"
+    "sidebar article aside";
+  .blogCover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: cover;
+    height: 140px;
+    margin: 40px auto;
+    vertical-align: middle;
+    h1 {
+      font-size: 4.5rem;
+      font-weight: bold;
+    }
+  }
   .sidebar {
     min-height: 220px;
+    grid-area: sidebar;
   }
   .postContainer {
     min-height: 100vh;
+    grid-area: article;
+  }
+  .socialStack {
+    grid-area: aside;
   }
 }
 
 @include min-width(900px) {
   .gridContainer {
-    grid-template-columns: 300px 830px auto;
+    grid-template-rows: auto;
+    grid-template-columns: auto 840px auto;
+    grid-template-areas:
+      "cover cover cover"
+      "sidebar article aside";
+    .blogCover {
+      min-height: 300px;
+    }
   }
 }
