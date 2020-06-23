@@ -5,17 +5,35 @@
   height: 100%;
   display: grid;
   grid-template-columns: auto;
+  grid-template-areas:
+    "cover cover cover"
+    "sidebar article aside";
   padding: 0 5%;
+  .blogCover {
+    grid-area: cover;
+    margin: 40px auto;
+    max-height: 400px;
+    width: 280px;
+  }
   .sidebar {
     min-height: 220px;
+    grid-area: sidebar;
   }
   .postContainer {
     min-height: 100vh;
+    grid-area: article;
+  }
+  .socialStack {
+    grid-area: aside;
   }
 }
 
 @include min-width(900px) {
   .gridContainer {
+    grid-template-rows: auto;
     grid-template-columns: 300px 830px auto;
+    grid-template-areas:
+      "cover cover cover"
+      "sidebar article aside";
   }
 }

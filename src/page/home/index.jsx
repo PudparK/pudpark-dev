@@ -32,7 +32,7 @@ const Home = () => {
             <li className="block sm:inline-block">
               <Link
                 to="/projects"
-                className="block sm:inline-block text-center sm:inline-block text-2xl font-semibold px-4 py-0 border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black noSelect"
+                className="leading-none text-2xl block sm:inline-block text-center sm:inline-block font-semibold px-4 py-2 border-2 rounded border-red text-red hover:border-transparent hover:bg-red hover:text-black noSelect"
               >
                 Projects
               </Link>
@@ -72,13 +72,13 @@ const Home = () => {
       <div className="sub-container flex flex-col justify-center bio-pic">
         <div className="">
           <FontAwesomeIcon icon={faQuoteLeft} size="2x" className="text-red" />
-          <blockquote className="w-1/2 text-5xl leading-none">
-            I like to build dope sh
+          <blockquote className="w-1/2 text-4xl lg:text-5xl leading-none">
+            I like to build dope
+            <br className="lg:invisible" /> sh
             <span className="text-4xl inline-block">
               <FontAwesomeIcon
                 icon={faAsterisk}
-                size="xs"
-                className="text-red flex"
+                className="text-red flex text-xl lg:text-3xl"
               />
             </span>
             t with cool people.
