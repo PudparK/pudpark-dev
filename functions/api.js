@@ -12,8 +12,8 @@ const fetch = require("node-fetch");
 require("dotenv").config();
 
 // API Calls
-const devTo = require("../endpoints/devto");
-const github = require("../endpoints/github");
+const devTo = require("./endpoints/devto");
+const github = require("./endpoints/github");
 
 const router = express.Router();
 
