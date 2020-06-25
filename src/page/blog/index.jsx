@@ -48,11 +48,19 @@ function Blog() {
           Blog<span>.</span>
         </h1>
       </div>
-      <div className={styles.sidebar}></div>
+      <div
+        className={
+          styles.sidebar + " flex flex-col items-center hidden lg:flex"
+        }
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eveniet
+          aliquam temporibus blanditiis error placeat! Sequi dolorem tempora vel
+          repudiandae nam aspernatur suscipit eius, voluptatem quidem sit vero,
+          vitae veritatis.
+        </p>
+      </div>
       <article className={styles.postContainer}>
-        <Post data={post} />
-        <Post data={post} />
-        <Post data={post} />
         <Post data={post} />
         <Post data={post} />
         <Post data={post} />
