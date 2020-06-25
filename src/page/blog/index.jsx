@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPenSquare } from "@fortawesome/free-solid-svg-icons";
 
 // Components
 import Post from "component/layout-component/Post";
