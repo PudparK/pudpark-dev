@@ -12,20 +12,20 @@ const fetch = require("node-fetch");
 require("dotenv").config();
 
 // API Calls
-const github = require("../endpoints/github");
 const devTo = require("../endpoints/devto");
+const github = require("../endpoints/github");
 
 const router = express.Router();
 
-router.get("/repos", (req, res) => {
-  fetch(github.url, github.opts)
+router.get("/posts", (req, res) => {
+  fetch(devTo.url, devTo.opts)
     .then((res) => res.json())
     .then((data) => res.send(data))
     .catch(console.error);
 });
 
-router.get("/devto", (req, res) => {
-  fetch(devTo.url, devTo.opts)
+router.get("/github", (req, res) => {
+  fetch(github.url, github.opts)
     .then((res) => res.json())
     .then((data) => res.send(data))
     .catch(console.error);
