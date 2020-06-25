@@ -2,13 +2,15 @@
 :root {
   --primary-red: #c8202f;
   --primary-dark: #131313;
-  --code: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-  --primary-line-height: 1;
   --react: #61daf6;
   --javascript: #f7df1e;
   --css: #2965f1;
   --node: #3d8836;
   --defaultColor: #c8202f;
+  --primary-line-height: 1;
+  --code: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  --pixel: "Press Start 2P", cursive;
+  --noto: "Noto Sans JP", sans-serif;
 }
 
 body {
@@ -54,6 +56,16 @@ code {
 
 .hCallout {
   font-family: "Noto Sans JP", sans-serif;
+}
+
+.pageHeader {
+  display: inline;
+  font-size: 10rem;
+  span {
+    color: var(--primary-red);
+    font-size: 5rem;
+    font-weight: bold;
+  }
 }
 
 .pk-container {

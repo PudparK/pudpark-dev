@@ -8,18 +8,16 @@
   padding: 0 2.5%;
   grid-template-areas:
     "cover cover cover"
-    "sidebar article aside";
+    ". article .";
   .blogCover {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     grid-area: cover;
     height: 140px;
     margin: 40px auto;
-    vertical-align: middle;
-    h1 {
-      font-size: 4.5rem;
-      font-weight: bold;
+    height: 200px;
+    svg {
+      display: inline;
     }
   }
   .sidebar {
@@ -38,12 +36,29 @@
 @include min-width(900px) {
   .gridContainer {
     grid-template-rows: auto;
-    grid-template-columns: auto 840px auto;
+    grid-template-columns: auto 840px 100px;
     grid-template-areas:
       "cover cover cover"
       "sidebar article aside";
+    padding: 0;
     .blogCover {
       min-height: 300px;
     }
   }
+  .socialStack {
+    display: flex;
+    ul {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 40px;
+    }
+  }
 }
+
+// h1 {
+//   color: transparentize($color: #000000, $amount: 0);
+//   font-size: 8rem;
+//   font-weight: bold;
+//   text-shadow: -1px -1px 0 red, 1px -1px 0 #000, -1px 1px 0 #000,
+//     1px 1px 0 #000;
+// }

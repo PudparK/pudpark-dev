@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 
 // Components
 import Post from "component/layout-component/Post";
+import SocialStack from "component/layout-component/SocialStack";
 
 const post = {
   type_of: "article",
@@ -43,9 +44,11 @@ function Blog() {
   return (
     <div className={styles.gridContainer + " sub-container"}>
       <div className={styles.blogCover}>
-        <h1 className="leading-none">Blog</h1>
+        <h1 className="pageHeader">
+          Blog<span>.</span>
+        </h1>
       </div>
-      <sidebar className={styles.sidebar}></sidebar>
+      <div className={styles.sidebar}></div>
       <article className={styles.postContainer}>
         <Post data={post} />
         <Post data={post} />
@@ -54,7 +57,13 @@ function Blog() {
         <Post data={post} />
         <Post data={post} />
       </article>
-      <aside className={styles.socialStack}></aside>
+      <aside
+        className={
+          styles.socialStack + " flex flex-col items-center hidden lg:flex"
+        }
+      >
+        <SocialStack />
+      </aside>
     </div>
   );
 }
