@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 
 // Components
+import Hero from "component/layout-component/Hero";
 import Post from "component/layout-component/Post";
 import SocialStack from "component/layout-component/SocialStack";
 
@@ -43,11 +44,7 @@ const post = {
 function Blog() {
   return (
     <div className={styles.gridContainer + " sub-container"}>
-      <div className={styles.blogCover}>
-        <h1 className="pageHeader">
-          Blog<span>.</span>
-        </h1>
-      </div>
+      <Hero title="Blog" />
       <div
         className={
           styles.sidebar + " flex flex-col items-center hidden lg:flex"

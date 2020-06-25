@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.module.css";
+// import styles from "./styles.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -10,7 +10,7 @@ import {
 
 function SocialStack() {
   return (
-    <ul className={styles.socialStack + " text-3xl lg:text-4xl text-red"}>
+    <ul className="text-3xl lg:text-4xl text-red">
       <li>
         <a className="noSelect-icon" href="https://twitter.com/Paul__132">
           <FontAwesomeIcon icon={faTwitter} />
