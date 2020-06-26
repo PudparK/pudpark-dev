@@ -1,46 +1,5 @@
 @import "../../asset/scss/main.scss";
 
-.gridContainer {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: auto;
-  padding: 0 2.5%;
-  grid-template-areas:
-    "cover cover cover"
-    ". article .";
-  .sidebar {
-    min-height: 220px;
-    grid-area: sidebar;
-  }
-  .postContainer {
-    min-height: 100vh;
-    grid-area: article;
-  }
-  .socialStack {
-    grid-area: aside;
-  }
-}
-
-@include min-width(900px) {
-  .gridContainer {
-    grid-template-rows: auto;
-    grid-template-columns: auto 840px 100px;
-    grid-template-areas:
-      "cover cover cover"
-      "sidebar article aside";
-    padding: 0;
-  }
-  .socialStack {
-    display: flex;
-    ul {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 40px;
-    }
-  }
-}
-
 // h1 {
 //   color: transparentize($color: #000000, $amount: 0);
 //   font-size: 8rem;

@@ -28,4 +28,14 @@ function Post({ data }) {
   );
 }
 
-export default Post;
+function PostContainer({ className, data }) {
+  return (
+    <article className={className}>
+      <Post data={data} />
+      <Post data={data} />
+      <Post data={data} />
+    </article>
+  );
+}
+
+export default PostContainer;

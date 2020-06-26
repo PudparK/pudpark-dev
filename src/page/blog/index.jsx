@@ -2,8 +2,9 @@ import React from "react";
 import styles from "./styles.module.scss";
 
 // Components
-import Hero from "component/layout-component/Hero";
-import Post from "component/layout-component/Post";
+import PageTemplate from "component/layout-component/PageTemplate";
+import PostContainer from "component/layout-component/PostContainer";
+import Sidebar from "component/layout-component/Sidebar";
 import SocialStack from "component/layout-component/SocialStack";
 
 const post = {
@@ -43,33 +44,11 @@ const post = {
 
 function Blog() {
   return (
-    <div className={styles.gridContainer + " sub-container"}>
-      <Hero title="Blog" />
-      <div
-        className={
-          styles.sidebar + " flex flex-col items-center hidden lg:flex"
-        }
-      >
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eveniet
-          aliquam temporibus blanditiis error placeat! Sequi dolorem tempora vel
-          repudiandae nam aspernatur suscipit eius, voluptatem quidem sit vero,
-          vitae veritatis.
-        </p>
-      </div>
-      <article className={styles.postContainer}>
-        <Post data={post} />
-        <Post data={post} />
-        <Post data={post} />
-      </article>
-      <aside
-        className={
-          styles.socialStack + " flex flex-col items-center hidden lg:flex"
-        }
-      >
-        <SocialStack />
-      </aside>
-    </div>
+    <PageTemplate title="Blog">
+      <Sidebar data={post.user} />
+      <PostContainer className={styles.postContainer} data={post} />
+      <SocialStack />
+    </PageTemplate>
   );
 }
 
