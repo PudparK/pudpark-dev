@@ -74,14 +74,7 @@ const Home = () => {
           <FontAwesomeIcon icon={faQuoteLeft} size="2x" className="text-red" />
           <blockquote className="w-1/2 text-4xl lg:text-5xl leading-none">
             I like to build dope
-            <br className="lg:invisible" /> sh
-            <span className="text-4xl inline-block">
-              <FontAwesomeIcon
-                icon={faAsterisk}
-                className="text-red flex text-xl lg:text-3xl"
-              />
-            </span>
-            t with cool people.
+            <br className="lg:invisible" /> projects with cool people.
           </blockquote>
         </div>
       </div>
