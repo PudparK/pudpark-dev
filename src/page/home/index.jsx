@@ -10,6 +10,8 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+
 const Home = () => {
   return (
     <React.Fragment>
