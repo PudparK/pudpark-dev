@@ -7,11 +7,9 @@ import PostContainer from "component/layout-component/PostContainer";
 // import Sidebar from "component/layout-component/Sidebar";
 import SocialStack from "component/layout-component/SocialStack";
 
-const posts = fetch(
-  "https://www.pudpark.dev/.netlify/functions/api/posts"
-).then((res) => res.json());
-
-console.log(posts);
+fetch("https://www.pudpark.dev/.netlify/functions/api/posts")
+  .then((res) => res.json())
+  .then((data) => console.log("data", data));
 
 function Blog() {
   return (
