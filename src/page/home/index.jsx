@@ -17,7 +17,7 @@ const Home = () => {
     <React.Fragment>
       <div className="sub-container h-screen flex flex-col justify-center">
         <h3 className="text-base font-bold relative lg:text-xl cursor">
-          HELLO WORLD
+          HELLO WORLD Test
         </h3>
         <h1 className="text-red text-5xl sm:text-6xl font-bold">Paul Barrón</h1>
         <p className="lg:w-3/4 text-3xl sm:text-5xl font-black leading-tight mb-6">
