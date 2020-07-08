@@ -7,9 +7,14 @@ import PostContainer from "component/layout-component/PostContainer";
 // import Sidebar from "component/layout-component/Sidebar";
 import SocialStack from "component/layout-component/SocialStack";
 
-fetch("https://www.pudpark.dev/.netlify/functions/api/posts")
-  .then((res) => res.json())
-  .then((data) => console.log("data", data));
+const handler = () =>
+  fetch("https://www.pudpark.dev/.netlify/functions/api/posts", {
+    headers: { accept: "Accept: application/json" },
+  })
+    .then((res) => res.json())
+    .then((data) => console.log("data", data));
+
+console.log("handler:", handler());
 
 function Blog() {
   return (
