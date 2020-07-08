@@ -45,7 +45,6 @@ const post = {
 function Blog() {
   return (
     <PageTemplate title="Blog">
-      <Sidebar data={post.user} />
       <PostContainer className={styles.postContainer} data={post} />
       <SocialStack />
     </PageTemplate>
