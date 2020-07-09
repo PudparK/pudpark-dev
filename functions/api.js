@@ -1,6 +1,7 @@
 // Express
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 // Netlify Serverless
 const serverless = require("serverless-http");
@@ -17,14 +18,14 @@ const github = require("./endpoints/github");
 
 const router = express.Router();
 
-router.get("/posts", (req, res) => {
+router.get("/posts", cors(), (req, res) => {
   fetch(devTo.url, devTo.opts)
     .then((res) => res.json())
     .then((data) => res.send(data))
     .catch(console.error);
 });
 
-router.get("/github", (req, res) => {
+router.get("/github", cors(), (req, res) => {
   fetch(github.url, github.opts)
     .then((res) => res.json())
     .then((data) => res.send(data))

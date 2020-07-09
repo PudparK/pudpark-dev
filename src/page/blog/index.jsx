@@ -19,7 +19,7 @@ console.log("handler:", handler());
 function Blog() {
   return (
     <PageTemplate title="Blog">
-      <PostContainer className={styles.postContainer} data={null} />
+      {/* <PostContainer className={styles.postContainer} data={null} /> */}
       <SocialStack />
     </PageTemplate>
   );
