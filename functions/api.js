@@ -12,6 +12,8 @@ const fetch = require("node-fetch");
 // Environmental Variables
 require("dotenv").config();
 
+app.options("*", cors());
+
 // API Calls
 const devTo = require("./endpoints/devto");
 const github = require("./endpoints/github");
