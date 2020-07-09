@@ -1,7 +1,6 @@
 // Express
 const express = require("express");
 const app = express();
-const cors = require("cors");
 
 // Netlify Serverless
 const serverless = require("serverless-http");
@@ -12,8 +11,6 @@ const fetch = require("node-fetch");
 // Environmental Variables
 require("dotenv").config();
 
-app.options("*", cors());
-
 // API Calls
 const devTo = require("./endpoints/devto");
 const github = require("./endpoints/github");
@@ -22,14 +19,14 @@ const router = express.Router();
 
 router.get("/posts", (req, res) => {
   fetch(devTo.url, devTo.opts)
-    .then((fetched) => fetched.json())
+    .then((res) => res.json())
     .then((data) => res.send(data))
     .catch(console.error);
 });
 
 router.get("/github", (req, res) => {
   fetch(github.url, github.opts)
-    .then((fetched) => fetched.json())
+    .then((res) => res.json())
     .then((data) => res.send(data))
     .catch(console.error);
 });
