@@ -8,7 +8,7 @@ import PageTemplate from "component/layout-component/PageTemplate";
 import SocialStack from "component/layout-component/SocialStack";
 
 const handler = () =>
-  fetch("https://www.pudpark.dev/.netlify/functions/api/posts", {
+  fetch(".netlify/functions/api/posts", {
     headers: { accept: "Accept: application/json" },
   })
     .then((res) => res.json())
