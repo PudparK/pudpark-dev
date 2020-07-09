@@ -27,7 +27,7 @@ router.get("/posts", cors(), (req, res) => {
 
 router.get("/github", cors(), (req, res) => {
   fetch(github.url, github.opts)
-    .then((res) => res.json())
+    .then((fetched) => fetched.json())
     .then((data) => res.send(data))
     .catch(console.error);
 });
