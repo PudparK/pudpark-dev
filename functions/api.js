@@ -20,7 +20,7 @@ const router = express.Router();
 
 router.get("/posts", cors(), (req, res) => {
   fetch(devTo.url, devTo.opts)
-    .then((res) => res.json())
+    .then((fetched) => fetched.json())
     .then((data) => res.send(data))
     .catch(console.error);
 });
