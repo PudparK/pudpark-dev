@@ -20,14 +20,14 @@ const github = require("./endpoints/github");
 
 const router = express.Router();
 
-router.get("/posts", cors(), (req, res) => {
+router.get("/posts", (req, res) => {
   fetch(devTo.url, devTo.opts)
     .then((fetched) => fetched.json())
     .then((data) => res.send(data))
     .catch(console.error);
 });
 
-router.get("/github", cors(), (req, res) => {
+router.get("/github", (req, res) => {
   fetch(github.url, github.opts)
     .then((fetched) => fetched.json())
     .then((data) => res.send(data))
