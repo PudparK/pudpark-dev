@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./styles.module.scss";
+// import styles from "./styles.module.scss";
 
 // Components
 import PageTemplate from "component/layout-component/PageTemplate";
-import PostContainer from "component/layout-component/PostContainer";
+// import PostContainer from "component/layout-component/PostContainer";
 // import Sidebar from "component/layout-component/Sidebar";
 import SocialStack from "component/layout-component/SocialStack";
 
