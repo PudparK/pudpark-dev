@@ -4,8 +4,7 @@ const fetchData = (url) => {
   };
   fetch(url)
     .then((res) => res.json())
-    .then((data) => console.log("data", data))
-    // .then((data) => storeData(data))
+    .then((data) => storeData(data))
     .catch((err) => console.log(`Error: ${err}`));
 };
 export default fetchData;
