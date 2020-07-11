@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-// import styles from "./styles.module.scss";
 
 // Components
 import PageTemplate from "component/layout-component/PageTemplate";
-import PostContainer from "component/layout-component/PostContainer";
+// import PostContainer from "component/layout-component/PostContainer";
 import SocialStack from "component/layout-component/SocialStack";
 
 //Data
@@ -13,12 +12,13 @@ function Blog() {
   const [posts, setPosts] = useState(null);
 
   useEffect(() => {
-    fetchData("/.netlify/functions/api/posts", setPosts);
+    fetchData("/.netlify/functions/api/posts").then((data) => setPosts(data));
   }, []);
+  console.log("posts:", posts);
 
   return (
     <PageTemplate title="Blog">
-      <PostContainer posts={posts} />
+      {/* <PostContainer posts={[0]} /> */}
       <SocialStack />
     </PageTemplate>
   );
