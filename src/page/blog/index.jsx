@@ -1,27 +1,25 @@
 import React from "react";
 // import styles from "./styles.module.scss";
 
-// Components
-import PageTemplate from "component/layout-component/PageTemplate";
-// import PostContainer from "component/layout-component/PostContainer";
-// import Sidebar from "component/layout-component/Sidebar";
-import SocialStack from "component/layout-component/SocialStack";
+//Data
+import fetchData from "api-queries/api-queries";
 
-const handler = () =>
-  fetch(".netlify/functions/api/posts", {
-    headers: { accept: "Accept: application/json" },
-  })
-    .then((res) => res.json())
-    .then((data) => console.log("data", data));
+let posts = fetchData(".netlify/functions/api/posts");
+console.log("posts:", posts);
 
-console.log("handler:", handler());
+// // Components
+// import PageTemplate from "component/layout-component/PageTemplate";
+// // import PostContainer from "component/layout-component/PostContainer";
+// // import Sidebar from "component/layout-component/Sidebar";
+// import SocialStack from "component/layout-component/SocialStack";
 
 function Blog() {
   return (
-    <PageTemplate title="Blog">
-      {/* <PostContainer className={styles.postContainer} data={null} /> */}
-      <SocialStack />
-    </PageTemplate>
+    <div>Here</div>
+    // <PageTemplate title="Blog">
+    //   {/* <PostContainer className={styles.postContainer} data={null} /> */}
+    //   <SocialStack />
+    // </PageTemplate>
   );
 }
 
