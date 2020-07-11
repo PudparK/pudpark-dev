@@ -4,7 +4,7 @@ import React from "react";
 //Data
 import fetchData from "api-queries/api-queries";
 
-let posts = fetchData(".netlify/functions/api/posts");
+let posts = fetchData("/.netlify/functions/api/posts"); //here
 console.log("posts:", posts);
 
 // // Components
