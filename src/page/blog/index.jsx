@@ -16,9 +16,13 @@ function Blog() {
   }, []);
   console.log("posts:", posts);
 
+  if (posts === null) {
+    return <p>Loading...</p>;
+  }
+
   return (
     <PageTemplate title="Blog">
-      <PostContainer posts={posts} />
+      {/* <PostContainer posts={posts} /> */}
       <SocialStack />
     </PageTemplate>
   );
