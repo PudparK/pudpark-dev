@@ -2,38 +2,37 @@ import React from "react";
 import styles from "./styles.module.scss";
 
 function Post({ posts }) {
-  return (
+  let eachOne = posts.map((post) => (
     <div className={styles.post}>
       <div className={styles.cover}>
-        <img src={posts.cover_image} alt="Pudpark Developer" />
+        <img src={post.cover_image} alt="Pudpark Developer" />
       </div>
       <div className={styles.postContent}>
         <div className={styles.articleHeader}>
-          <h2>{posts.title}</h2>
+          <h2>{post.title}</h2>
           <ul className={styles.tagList}>
-            {posts.tag_list.map((tag) => {
+            {post.tag_list.map((tag) => {
               return <li className={"defaultColor " + tag}>{tag}</li>;
             })}
           </ul>
           <p className={styles.author + " text-red"}>
-            by {posts.user.username.toUpperCase()} on{" "}
-            {new Date(posts.published_at).toLocaleDateString()}
+            by {post.user.username.toUpperCase()} on{" "}
+            {new Date(post.published_at).toLocaleDateString()}
           </p>
         </div>
         <div className={styles.articleBody}>
-          <p>{posts.description}</p>
+          <p>{post.description}</p>
         </div>
       </div>
     </div>
-  );
+  ));
+  return eachOne;
 }
 
-function PostContainer({ className, data }) {
+function PostContainer({ posts }) {
   return (
-    <article className={className}>
-      <Post data={data} />
-      <Post data={data} />
-      <Post data={data} />
+    <article>
+      <Post posts={posts} />
     </article>
   );
 }
