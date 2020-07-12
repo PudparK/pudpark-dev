@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 // Components
 import PageTemplate from "component/layout-component/PageTemplate";
-import PostContainer from "component/layout-component/PostContainer";
+// import PostContainer from "component/layout-component/PostContainer";
 import SocialStack from "component/layout-component/SocialStack";
 
 //Data
