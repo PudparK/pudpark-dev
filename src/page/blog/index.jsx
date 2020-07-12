@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import styles from "./styles.module.scss";
+
 // Components
 import PageTemplate from "component/layout-component/PageTemplate";
 import PostContainer from "component/layout-component/PostContainer";
@@ -20,7 +22,9 @@ function Blog() {
   if (posts === null) {
     return (
       <div className="flex min-h-full justify-center items-center relative">
-        <h1 className="font-bold lg:text-4xl cursor">Loading...</h1>
+        <h1 className={styles.bigCursor + "font-bold lg:text-4xl"}>
+          Loading...
+        </h1>
       </div>
     );
   }

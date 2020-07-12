@@ -31,7 +31,9 @@
     "eject": "react-scripts eject",
     "build:css": "postcss src/asset/css/tailwind.css -o src/asset/css/main.css",
     "watch:css": "postcss src/asset/css/tailwind.css -o src/asset/css/main.css",
-    "n": "netlify dev"
+    "n": "netlify dev",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,6 +51,11 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^5.3.19",
     "autoprefixer": "^9.7.4",
     "postcss-cli": "^7.1.0"
   }
