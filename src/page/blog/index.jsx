@@ -15,7 +15,7 @@ function Blog() {
   const [posts, setPosts] = useState(null);
 
   useEffect(() => {
-    fetchData("/.netlify/functions/api/posts").then((data) => setPosts(data));
+    fetchData("/.netlify/functions/api/devto").then((data) => setPosts(data));
   }, []);
   console.log("posts:", posts);
 

@@ -17,7 +17,7 @@ const github = require("./endpoints/github");
 
 const router = express.Router();
 
-router.get("/posts", (req, res) => {
+router.get("/devto", (req, res) => {
   fetch(devTo.url, devTo.opts)
     .then((res) => res.json())
     .then((data) => res.send(data))
