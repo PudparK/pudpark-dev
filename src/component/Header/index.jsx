@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import HamburgerButton from "component/layout-component/HamburgerButton/index";
+import HamburgerButton from "component/HamburgerButton/index";
 import headerLinks from "./headerLinks.json";
 import styles from "./styles.module.scss";
 import logo from "./pk-development-large-bg-white.png";

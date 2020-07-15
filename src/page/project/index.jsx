@@ -1,13 +1,10 @@
 import React from "react";
 
-import Button from "component/layout-component/Button";
+import PageTemplate from "component/PageTemplate";
+import PostContainer from "component/PostContainer";
 
 function Project() {
-  return (
-    <div className="main-content">
-      'Hello from the Projects page. <Button text="Button Text" />'
-    </div>
-  );
+  return <PageTemplate title="Projects"></PageTemplate>;
 }
 
 export default Project;

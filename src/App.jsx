@@ -3,8 +3,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Routes";
 
 // layout-components
-import Header from "component/layout-component/Header";
-import Container from "component/layout-component/Container";
+import Header from "component/Header";
+import Container from "component/Container";
 // CSS
 import "./App.css";
 

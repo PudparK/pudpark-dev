@@ -26,3 +26,6 @@ twitter.api
 # files
 *.ai
 /src/page/blog/SVG
+
+# PK Special
+/.vscode

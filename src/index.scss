@@ -133,3 +133,9 @@ code {
   opacity: 0.9;
   color: var(--primary-dark);
 }
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
