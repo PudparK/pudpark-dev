@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "./styles.module.scss";
 
-function Post({ posts }) {
-  let eachOne = posts.map((post, i) => (
-    <div className={styles.post} key={"Post: " + i}>
+function Blog({ blogPosts }) {
+  let eachOne = blogPosts.map((blogPost, i) => (
+    <div className={styles.Post} key={"blogPost: " + i}>
       <div className={styles.cover}>
-        <img src={post.cover_image} alt="Pudpark Developer" />
+        <img src={blogPost.cover_image} alt="Pudpark Developer" />
       </div>
-      <div className={styles.postContent}>
+      <div className={styles.PostContent}>
         <div className={styles.articleHeader}>
-          <h2>{post.title}</h2>
+          <h2>{blogPost.title}</h2>
           <ul className={styles.tagList}>
-            {post.tag_list.map((tag, i) => {
+            {blogPost.tag_list.map((tag, i) => {
               return (
                 <li className={"defaultColor " + tag} key={`Tag: ${i}`}>
                   {tag}
@@ -20,12 +20,12 @@ function Post({ posts }) {
             })}
           </ul>
           <p className={styles.author + " text-red"}>
-            by {post.user.username.toUpperCase()} on{" "}
-            {new Date(post.published_at).toLocaleDateString()}
+            by {blogPost.user.username.toUpperCase()} on{" "}
+            {new Date(blogPost.published_at).toLocaleDateString()}
           </p>
         </div>
         <div className={styles.articleBody}>
-          <p>{post.description}</p>
+          <p>{blogPost.description}</p>
         </div>
       </div>
     </div>
@@ -33,10 +33,23 @@ function Post({ posts }) {
   return eachOne;
 }
 
-function PostContainer({ posts }) {
+function Project({ data }) {
+  return <></>;
+}
+
+function PostContainer({ data, postType }) {
   return (
     <article>
-      <Post posts={posts} />
+      {postType === "blog" ? (
+        <>
+          <Blog blogPosts={data} />
+          <Blog blogPosts={data} />
+          <Blog blogPosts={data} />
+          <Blog blogPosts={data} />
+        </>
+      ) : (
+        <Project projectPosts={data} />
+      )}
     </article>
   );
 }

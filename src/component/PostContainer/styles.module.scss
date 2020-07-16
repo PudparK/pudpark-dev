@@ -1,7 +1,7 @@
 // @import "../../asset/scss/main.scss";
 @import "../../asset/scss/main.scss";
 
-.post {
+.Post {
   border-right: 4px solid var(--primary-red);
   border-bottom: 4px solid var(--primary-red);
   box-sizing: border-box;
@@ -82,7 +82,7 @@
 }
 
 @include min-width(900px) {
-  .post {
+  .Post {
     margin-bottom: 40px;
     .postContent {
       max-width: 800px;

@@ -8,6 +8,9 @@ import Container from "component/Container";
 // CSS
 import "./App.css";
 
+// dotenv
+require("dotenv").config({ path: __dirname + "/.env" });
+
 function App() {
   return (
     <Router>

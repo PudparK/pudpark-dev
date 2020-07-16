@@ -4,7 +4,7 @@ const opts = {
   method: "GET",
   headers: {
     "Content-Type": "application/json",
-    "api-key": "kszX7fugkJCyGeuhymHkjSBe",
+    "api-key": process.env.DEVTO_TOKEN,
   },
 };
 
