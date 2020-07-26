@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./styles.module.scss";
 
-function Blog({ blogPosts }) {
-  let eachOne = blogPosts.map((blogPost, i) => (
-    <div className={styles.Post} key={"blogPost: " + i}>
+function Blog({ blogPost }) {
+  console.log("blogPost:", blogPost);
+  return (
+    <div className={styles.Post}>
       <div className={styles.cover}>
         <img src={blogPost.cover_image} alt="Pudpark Developer" />
       </div>
@@ -29,27 +30,40 @@ function Blog({ blogPosts }) {
         </div>
       </div>
     </div>
-  ));
-  return eachOne;
+  );
 }
 
-function Project({ data }) {
-  return <></>;
+function Project({ project }) {
+  return (
+    <div className={styles.Project}>
+      <a href={project.homepageUrl ? project.homepageUrl : ""}>
+        <h2>{project.name}</h2>
+      </a>
+      <p>{project.createdAt}</p>
+      <p>{project.description}</p>
+      {project.homepageUrl ? (
+        <iframe
+          src={project.homepageUrl}
+          className={styles.scrollbar}
+          title={project.description}
+        ></iframe>
+      ) : (
+        ""
+      )}
+      <hr className="border-solid text-red" />
+    </div>
+  );
 }
 
 function PostContainer({ data, postType }) {
+  console.log("data:", data);
   return (
     <article>
-      {postType === "blog" ? (
-        <>
-          <Blog blogPosts={data} />
-          <Blog blogPosts={data} />
-          <Blog blogPosts={data} />
-          <Blog blogPosts={data} />
-        </>
-      ) : (
-        <Project projectPosts={data} />
-      )}
+      {postType === "blog"
+        ? data.map((blogPost, i) => <Blog blogPost={blogPost} key={i} />)
+        : data.data.user.repositories.nodes.map((project) => {
+            return <Project project={project} />;
+          })}
     </article>
   );
 }

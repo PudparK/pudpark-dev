@@ -23,7 +23,6 @@ function Blog() {
       clearTimeout(timeout);
     };
   }, []);
-  console.log("data:", data);
 
   return (
     <>

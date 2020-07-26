@@ -23,7 +23,6 @@ function Project() {
       clearTimeout(timeout);
     };
   }, []);
-  console.log("data: ", data);
 
   return (
     <>

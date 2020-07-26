@@ -64,8 +64,12 @@ code {
 }
 
 .sub-container {
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 10px;
+  padding-left: 10px;
+  @include min-width(375px) {
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+  }
   @include extra-large-devices {
     padding-right: 0;
     padding-left: 0;
