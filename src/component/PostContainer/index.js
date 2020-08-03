@@ -50,7 +50,7 @@ function Project({ project }) {
         <a href={project.homepageUrl ? project.homepageUrl : ""}>
           <h2>{project.name}</h2>
         </a>
-        <p>{project.createdAt}</p>
+        <p className="text-red">{project.createdAt}</p>
       </div>
       <div className={styles.articleBody}>
         <p>{project.description}</p>
