@@ -41,6 +41,7 @@ function Header() {
             onClick={toggleClose}
             target="_blank"
             rel="noopener noreferrer"
+            key={i}
           >
             {link.name}
           </a>

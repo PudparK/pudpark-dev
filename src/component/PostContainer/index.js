@@ -35,14 +35,10 @@ function Blog({ blogPost }) {
 
 function Project({ project }) {
   return (
-    <div className={styles.Project}>
-      <a href={project.homepageUrl ? project.homepageUrl : ""}>
-        <h2>{project.name}</h2>
-      </a>
-      <p>{project.createdAt}</p>
-      <p>{project.description}</p>
+    <div className={styles.Post}>
       {project.homepageUrl ? (
         <iframe
+          scrolling="no"
           src={project.homepageUrl}
           className={styles.scrollbar}
           title={project.description}
@@ -50,7 +46,15 @@ function Project({ project }) {
       ) : (
         ""
       )}
-      <hr className="border-solid text-red" />
+      <div className={styles.articleHeader}>
+        <a href={project.homepageUrl ? project.homepageUrl : ""}>
+          <h2>{project.name}</h2>
+        </a>
+        <p>{project.createdAt}</p>
+      </div>
+      <div className={styles.articleBody}>
+        <p>{project.description}</p>
+      </div>
     </div>
   );
 }
@@ -61,8 +65,10 @@ function PostContainer({ data, postType }) {
     <article>
       {postType === "blog"
         ? data.map((blogPost, i) => <Blog blogPost={blogPost} key={i} />)
-        : data.data.user.repositories.nodes.map((project) => {
-            return <Project project={project} />;
+        : data.data.user.repositories.nodes.map((project, key) => {
+            return project.homepageUrl ? (
+              <Project project={project} key={key} />
+            ) : null;
           })}
     </article>
   );
