@@ -16,7 +16,8 @@
     width: 100%;
     position: relative;
     padding: 100px;
-    img {
+    img,
+    iframe {
       filter: grayscale(100%);
       position: absolute;
       top: 0;
@@ -35,7 +36,10 @@
     img {
       filter: grayscale(0);
     }
-    cursor: pointer;
+  }
+  iframe {
+    border-radius: 25px 25px 0 0;
+    overflow: hidden;
   }
   .articleHeader {
     min-height: 100px;
