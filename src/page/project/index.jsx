@@ -18,7 +18,7 @@ function Project() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       fetchData("/.netlify/functions/api/github").then((data) => setData(data));
-    }, 2500);
+    }, 1500);
     return () => {
       clearTimeout(timeout);
     };

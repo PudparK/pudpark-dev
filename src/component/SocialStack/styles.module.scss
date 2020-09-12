@@ -1,9 +1,5 @@
 @import "../../asset/scss/main.scss";
 
-.socialStack {
-  display: none;
-}
-
 @include large-devices {
   .socialStack {
     display: flex;

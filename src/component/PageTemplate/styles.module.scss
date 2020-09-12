@@ -14,21 +14,15 @@
   border-radius: 8px;
   margin: 30px auto;
 }
+
 .mainContent {
   display: grid;
-  grid-template-columns: auto;
-  padding: 0 2.5%;
-  grid-template-areas: ". article .";
 }
 
 @include min-width(900px) {
-  .headerContent {
-    height: 480px;
-  }
   .mainContent {
-    grid-template-rows: auto;
-    grid-template-columns: auto 840px 100px;
-    grid-template-areas: "sidebar article aside";
-    padding: 0;
+    display: grid;
+    grid-template-columns: 20% Auto 10%;
+    grid-template-columns: none 100% none;
   }
 }

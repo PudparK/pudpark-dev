@@ -18,7 +18,7 @@ function Blog() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       fetchData("/.netlify/functions/api/devto").then((data) => setData(data));
-    }, 2500);
+    }, 1500);
     return () => {
       clearTimeout(timeout);
     };

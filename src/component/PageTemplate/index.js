@@ -14,5 +14,4 @@ function PageTemplate({ children, title }) {
     </div>
   );
 }
-
 export default PageTemplate;
