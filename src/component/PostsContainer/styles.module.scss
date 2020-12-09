@@ -1,0 +1,33 @@
+@import "../../asset/scss/main.scss";
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  .sidebar {
+    flex: 1;
+  }
+  .postColumn {
+    flex: 1;
+  }
+  .socialStack {
+    flex: 1;
+  }
+}
+
+@include medium-devices {
+  .contentContainer {
+    flex-direction: row;
+    column-gap: 1rem;
+    .sidebar {
+      flex: 1;
+      display: block;
+    }
+    .postColumn {
+      flex: 7;
+    }
+    .socialStack {
+      flex: 1;
+      display: block;
+    }
+  }
+}

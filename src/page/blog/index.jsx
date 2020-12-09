@@ -4,10 +4,8 @@ import React, { useState, useEffect } from "react";
 
 // Components
 import Loading from "component/Loading";
-import PageTemplate from "component/PageTemplate";
-import PostContainer from "component/PostContainer";
-import SocialStack from "component/SocialStack";
-import Sidebar from "component/Sidebar";
+import PageHeader from "component/PageHeader";
+import PostsContainer from "component/PostsContainer";
 
 //Data
 import fetchData from "util/netReq";
@@ -16,12 +14,7 @@ function Blog() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
       fetchData("/.netlify/functions/api/devto").then((data) => setData(data));
-    }, 1500);
-    return () => {
-      clearTimeout(timeout);
-    };
   }, []);
 
   return (
@@ -29,11 +22,10 @@ function Blog() {
       {!data ? (
         <Loading />
       ) : (
-        <PageTemplate title="Blog">
-          <Sidebar />
-          <PostContainer data={data} postType="blog" />
-          <SocialStack />
-        </PageTemplate>
+        <React.Fragment>
+          <PageHeader title="Blog"/>
+          <PostsContainer data={data} postType="blog" />
+        </React.Fragment>
       )}
     </>
   );

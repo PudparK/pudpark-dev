@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./styles.module.scss";
 
-function Hero({ title }) {
+// Components
+function PageHeader({ title }) {
   return (
-    <div className={styles.HeroCover}>
-      <h1 className={styles.header}>
+    <div className={styles.pageHeader}>
+      <h1>
         {title}
         <span>.</span>
       </h1>
     </div>
   );
 }
-
-export default Hero;
+export default PageHeader;

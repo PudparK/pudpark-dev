@@ -1,0 +1,107 @@
+@import "../../asset/scss/main.scss";
+
+.tagList {
+  display: flex;
+  li {
+    margin-right: 0.7rem;
+    margin-bottom: 0.7rem;
+    span {
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 0.04rem 1rem;
+      border-radius: 0.2rem;
+    }
+  }
+}
+
+@include medium-devices {
+  .tagList {
+    flex-direction: column;
+    position: sticky;
+    -webkit-position: sticky;
+    top: 4rem;
+    li {
+      margin-bottom: 0.7rem;
+      margin-right: 0;
+      text-align: right;
+      cursor: pointer;
+      span {
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 0.04rem 1rem;
+        border-radius: 0.2rem;
+      }
+    }
+  }
+}
+.active {
+  background: red;
+}
+.blogContent {
+  img {
+    filter: grayscale(75%);
+  }
+}
+
+/***** Programming Colors **********/
+.defaultColor {
+  border: 2px solid var(--defaultColor);
+  opacity: 0.9;
+  color: var(--defaultColor);
+  background-color: transparent;
+}
+.react {
+  border: 2px solid var(--react);
+  opacity: 0.9;
+  color: var(--react);
+  background-color: transparent;
+}
+.javascript {
+  border: 2px solid var(--javascript);
+  opacity: 0.9;
+  color: var(--javascript);
+  background-color: transparent;
+}
+.css {
+  border: 2px solid var(--css);
+  opacity: 0.9;
+  color: var(--css);
+  background-color: transparent;
+}
+.node {
+  border: 2px solid var(--node);
+  opacity: 0.9;
+  color: var(--node);
+  background-color: transparent;
+}
+
+.defaultColor-active {
+  background-color: var(--defaultColor);
+  opacity: 0.9;
+  color: var(--primary-dark);
+  background-color: var(--primary-dark);
+}
+.react-active {
+  background-color: var(--react);
+  opacity: 0.9;
+  color: var(--primary-dark);
+  background-color: var(--react);
+}
+.javascript-active {
+  background-color: var(--javascript);
+  opacity: 0.9;
+  color: var(--primary-dark);
+  background-color: var(--javascript);
+}
+.css-active {
+  background-color: var(--css);
+  opacity: 0.9;
+  color: var(--primary-dark);
+  background-color: var(--css);
+}
+.node-active {
+  background-color: var(--node);
+  opacity: 0.9;
+  color: var(--primary-dark);
+  background-color: var(--node);
+}

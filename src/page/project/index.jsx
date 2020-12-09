@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import PageTemplate from "component/PageTemplate";
+import PageHeader from "component/PageHeader";
 // import PostContainer from "component/PostContainer";
 
 // Data
@@ -8,32 +8,24 @@ import fetchData from "util/netReq";
 
 // Component
 import Loading from "component/Loading";
-import PostContainer from "component/PostContainer";
-import Sidebar from "component/Sidebar";
-import SocialStack from "component/SocialStack";
+import PostsContainer from "component/PostsContainer";
 
 function Project() {
   const [data, setData] = useState(null);
-
+  
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      fetchData("/.netlify/functions/api/github").then((data) => setData(data));
-    }, 1500);
-    return () => {
-      clearTimeout(timeout);
-    };
+    fetchData("/.netlify/functions/api/github").then((data) => setData(data));
   }, []);
-
+  
   return (
     <>
       {!data ? (
         <Loading />
       ) : (
-        <PageTemplate title="Projects">
-          <Sidebar />
-          <PostContainer data={data} postType="project" />
-          <SocialStack />
-        </PageTemplate>
+        <React.Fragment>
+          <PageHeader title="Projects" />
+          <PostsContainer data={data} />
+        </React.Fragment>
       )}
     </>
   );

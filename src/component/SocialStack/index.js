@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles.module.scss";
-// import { faHandPointUp } from "@fortawesome/free-regular-svg-icons";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -19,43 +18,42 @@ function SocialStack({ className }) {
       behavior: "smooth",
     });
   };
+
   return (
     <div className={styles.socialStack}>
-      <ul className="text-3xl lg:text-4xl text-red">
-        <li>
-          <a className="noSelect-icon" href="https://twitter.com/Paul__132">
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-        </li>
-        <li>
-          <a
-            className="noSelect-icon"
-            href="https://www.linkedin.com/in/paul-barron"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-        </li>
-        <li>
-          <a className="noSelect-icon" href="https://www.twitch.tv/pudpark36">
-            <FontAwesomeIcon icon={faTwitch} />
-          </a>
-        </li>
-        <li>
-          <a
-            className="noSelect-icon"
-            href="https://www.youtube.com/channel/UCYZ0t_lWDlbdLVonbqpOg4g"
-          >
-            <FontAwesomeIcon icon={faYoutube} />
-          </a>
-        </li>
-        <li>
-          <FontAwesomeIcon
-            icon={faArrowUp}
-            className={styles.ArrowUp + " noSelect-icon cursor-pointer"}
-            onClick={toTop}
-          />
-        </li>
-      </ul>
+      <div>
+        <a className="noSelect-icon" href="https://twitter.com/Paul__132">
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
+      </div>
+      <div>
+        <a
+          className="noSelect-icon"
+          href="https://www.linkedin.com/in/paul-barron"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+      </div>
+      <div>
+        <a className="noSelect-icon" href="https://www.twitch.tv/pudpark36">
+          <FontAwesomeIcon icon={faTwitch} />
+        </a>
+      </div>
+      <div>
+        <a
+          className="noSelect-icon"
+          href="https://www.youtube.com/channel/UCYZ0t_lWDlbdLVonbqpOg4g"
+        >
+          <FontAwesomeIcon icon={faYoutube} />
+        </a>
+      </div>
+      <div>
+        <FontAwesomeIcon
+          icon={faArrowUp}
+          className={styles.ArrowUp + " noSelect-icon cursor-pointer"}
+          onClick={toTop}
+        />
+      </div>
     </div>
   );
 }

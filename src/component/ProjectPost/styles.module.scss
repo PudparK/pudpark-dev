@@ -1,0 +1,48 @@
+iframe {
+  height: 300px;
+  border-radius: 25px 25px 0 0;
+  border-bottom: 0.01em solid rgba(171, 171, 171, 0.1);
+  overflow: hidden;
+}
+.articleHeader {
+  min-height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+  h2 {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 0.9;
+    margin-top: 16px;
+  }
+  p {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  ul.tagList {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-family: var(--code);
+      margin-right: 5px;
+      padding: 2px 2px;
+      border-radius: 2px;
+      margin-bottom: 5px;
+    }
+  }
+}
+.articleBody {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.2rem;
+}

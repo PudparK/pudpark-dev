@@ -6,7 +6,7 @@ import Routes from "./Routes";
 import Header from "component/Header";
 import Container from "component/Container";
 // CSS
-import "./App.css";
+import "./App.scss";
 
 // dotenv
 require("dotenv").config({ path: __dirname + "/.env" });

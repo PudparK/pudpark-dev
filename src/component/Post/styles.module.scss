@@ -1,0 +1,34 @@
+@import "../../asset/scss/main.scss";
+.Post {
+  border-right: 4px solid var(--primary-red);
+  border-bottom: 4px solid var(--primary-red);
+  box-sizing: border-box;
+  border-radius: 25px;
+  /* Top Left | Top Right | Bottom Right | Bottom Left */
+  margin-bottom: 20px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@include min-width(900px) {
+  .Post {
+    margin-bottom: 40px;
+    .postContent {
+      max-width: 800px;
+      margin: 20px auto;
+      .articleHeader {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.Project {
+  iframe {
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
