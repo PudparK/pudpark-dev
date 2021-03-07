@@ -22,7 +22,12 @@
 @include min-width(900px) {
   .mainContent {
     display: grid;
-    grid-template-columns: 20% Auto 10%;
     grid-template-columns: none 100% none;
+  }
+}
+@include min-width(1024px) {
+  .mainContent {
+    display: grid;
+    grid-template-columns: 20% Auto 10%;
   }
 }
