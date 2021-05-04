@@ -30,3 +30,5 @@ twitter.api
 
 # PK Special
 /.vscode
+.env.variables
+vscode/settings.json

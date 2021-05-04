@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Home.css";
+import styles from "./home.module.scss";
+import Quotes from "../../component/Quotes";
+import classNames from "classnames";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -27,7 +29,7 @@ const Home = () => {
           <span className="hCallout"> JS</span>.
         </p>
 
-        <div className="home-heading text-red">
+        <div className={styles.homeHeading}>
           <ul className="flex flex-wrap items-center text-3xl lg:text-4xl">
             <li className="block sm:inline-block">
               <Link
@@ -69,13 +71,10 @@ const Home = () => {
           </ul>
         </div>
       </div>
-      <div className="sub-container flex flex-col justify-center bio-pic">
-        <div className="">
-          <FontAwesomeIcon icon={faQuoteLeft} size="2x" className="text-red" />
-          <blockquote className="w-1/2 text-4xl lg:text-5xl leading-none">
-            I like to build dope
-            <br className="lg:invisible" /> projects with cool people.
-          </blockquote>
+      <div className={classNames("sub-container flex flex-col justify-center", styles.bioPic)}>
+        <div className={styles.quoteContainer}>
+          <FontAwesomeIcon icon={faQuoteLeft} size="2x" className={styles.quotes} />
+          <Quotes />
         </div>
       </div>
     </React.Fragment>

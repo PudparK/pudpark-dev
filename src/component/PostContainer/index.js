@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./styles.module.scss";
 
 function Blog({ blogPost }) {
-  console.log("blogPost:", blogPost);
   return (
     <div className={styles.Post}>
       <div className={styles.cover}>
@@ -60,16 +59,15 @@ function Project({ project }) {
 }
 
 function PostContainer({ data, postType }) {
-  console.log("data:", data);
   return (
     <article>
       {postType === "blog"
         ? data.map((blogPost, i) => <Blog blogPost={blogPost} key={i} />)
         : data.data.user.repositories.nodes.map((project, key) => {
-            return project.homepageUrl ? (
-              <Project project={project} key={key} />
-            ) : null;
-          })}
+          return project.homepageUrl ? (
+            <Project project={project} key={key} />
+          ) : null;
+        })}
     </article>
   );
 }

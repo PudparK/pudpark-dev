@@ -1,4 +1,4 @@
-.bio-pic {
+.bioPic {
   background: url("./bw-paul-barron-600.png");
   background-repeat: no-repeat;
   background-origin: border-box;
@@ -7,37 +7,40 @@
 }
 
 @media screen and (min-width: 768px) {
-  .bio-pic {
+  .bioPic {
     background-position: right bottom;
   }
 }
 
-.home-heading ul li:first-child {
+.homeHeading ul li:first-child {
   text-align: center;
   width: 100%;
   margin-bottom: 1.25rem;
+  color: var(--primary-red);
 }
 
-.home-heading ul li a {
+.homeHeading ul li a {
   display: flex;
   justify-content: center;
+  color: var(--primary-red);
 }
 
-.home-heading ul {
+.homeHeading ul {
   justify-content: space-around;
+  color: var(--primary-red);
 }
 
 @media screen and (min-width: 640px) {
-  .home-heading ul li:first-child {
+  .homeHeading ul li:first-child {
     margin-bottom: 0;
     width: auto;
   }
 
-  .home-heading ul {
+  .homeHeading ul {
     justify-content: initial;
   }
 
-  .home-heading ul li {
+  .homeHeading ul li {
     margin-right: 20px;
   }
 }
@@ -58,5 +61,11 @@
 @media screen and (min-width: 1024px) {
   .cursor::after {
     top: 4px;
+  }
+}
+
+.quoteContainer {
+  .quotes {
+    color: var(--primary-red);
   }
 }
